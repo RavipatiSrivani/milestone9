@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <h2 align="center">Indexed Collection</h2>
+    </head>
+    <body align="center">
+        <p>FOR EACH ITERATOR</p>
+    <p id="demo"></p>
+        <p id="demo1"></p>
+    <script>
+        const array = [10, 20, 30, 40];
+        document.write("The array after pop operation is:" + "<br>");
+        array.pop();
+        document.write(array);
+        var txt = "";
+        var n = [1,2,3,4,5];
+        n.forEach(itrtFunction);
+
+        document.getElementById("demo").innerHTML = txt;
+
+        function itrtFunction(value, index, array) {
+            txt = txt + value + "<br>";
+            var numArray = [41, 2, 14, 29, 49];
+            var s = numArray.some(myFunction);
+            function myFunction(value, index, array) {
+                return value > 50;
+            }
+        }
+    </script>
+
+    </body>
+</html>

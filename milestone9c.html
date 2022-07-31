@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <h2 align="center">JSON</h2>
+    </head>
+    <body align="center">
+        <script>
+        let text = '{"vehicle":[' + '{ "name": "Toyota Rav4", "engine": "2.5L", "price": 32000 }]}';
+
+        const obj = JSON.parse(text);
+        document.write(obj.vehicle[0].name + " ");
+        document.write(obj.vehicle[0].engine);
+    
+        </script>
+    </body>
+</html>

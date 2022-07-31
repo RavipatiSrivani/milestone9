@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h2 align="center">Modules..</h2>
+    </head>
+    <body align="center">
+        <script>
+            let area = function (length, breadth) {
+    let a = length * breadth;
+    document.write('Area of the rectangle is ' + a + ' square unit');
+}
+let perimeter = function (length, breadth) {
+    let p = 2 * (length + breadth);
+    document.write('Perimeter of the rectangle is ' + p + ' unit');
+}
+module.exports = {
+    area,
+    perimeter
+}
+const lib =  require('./library');
+let length = 10;
+let breadth = 10;
+lib.area(length, breadth);
+lib.perimeter(length, breadth);
+</script>
+
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h2 align="center">Promises</h2>
+    </head>
+    <body align="center">
+        <script>
+            const isPromiseLike = obj =>
+              obj !== null &&
+              (typeof obj === 'object' || typeof obj === 'function') &&
+              typeof obj.then === 'function';
+            
+            console.log(isPromiseLike({
+              then: function() {
+                return '';
+              }
+            })); 
+            console.log(isPromiseLike(null));
+            console.log(isPromiseLike({}));
+        </script>
+    </body>
+</html>
